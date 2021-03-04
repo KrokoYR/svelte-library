@@ -1,10 +1,9 @@
-import TaskList from './TaskList.svelte';
-
+import PureTaskList from './PureTaskList.svelte';
 import * as TaskStories from '../Task/Task.stories';
 
 export default {
-  component: TaskList,
-  title: 'TaskList',
+  component: PureTaskList,
+  title: 'PureTaskList',
   argTypes: {
     onPinTask: { action: 'onPinTask' },
     onArchiveTask: { action: 'onArchiveTask' },
@@ -12,7 +11,7 @@ export default {
 };
 
 const Template = args => ({
-  Component: TaskList,
+  Component: PureTaskList,
   props: args,
   on: {
     ...TaskStories.actionsData,
